@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a= [1,2,4,8,-7,8,32,4,3,122,3,9877];
+    // a.reverse().join();
+    // console.log(a)
+    let first = 0;
+    let last = a.length - 1;
+    while (first < last) {
+        let b = a[first];
+        a[first] = a[last];
+        a[last] = b;
+        first++;
+        last--;
+    }
+    document.write(a);
+    // giải thích phương thức reverse
+
+</script>
+</html>
